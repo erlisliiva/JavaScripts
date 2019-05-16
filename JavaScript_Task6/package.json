@@ -1,0 +1,16 @@
+{
+  "name": "chatbox",
+  "version": "1.0.0",
+  "description": "SimpleChatApp",
+  "main": "server.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Erlis Liiva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "markdown-it": "^8.4.2",
+    "socket.io": "*"
+  }
+}

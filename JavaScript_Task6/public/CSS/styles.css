@@ -1,0 +1,179 @@
+body {
+    font-family: "Yu Gothic UI";
+    background: url("images/blue-background.jpg") no-repeat;
+    background-size: cover;
+    color: #000000;
+}
+
+
+.top-footer {
+    padding: 10px;
+    margin: -10px;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+#message-table {
+    min-height: 300px;
+    overflow: scroll;
+}
+
+.message-container {
+    margin-top: 6rem;
+
+    padding: 2rem;
+    /*border: 2px solid #000000;*/
+    border: 14px solid #83b1ff;
+    box-shadow: 0 0 15px #192f92;
+    border-radius: 13px;
+    width: 30%;
+    height: 40vh;
+    /*border-radius: 1rem;*/
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.users-container {
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.input-container {
+    margin-left: 20px;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.message-sender {
+    font-size: 1em;
+    margin-left: 0.5rem;
+}
+
+.message-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    /*width: fit-content;*/
+    /*width: -moz-fit-content;*/
+    background: #914965;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.2em;
+    word-break: break-all;
+    max-width: 200px;
+
+
+}
+.client-message .message-sender{
+    margin-left: 71%;
+}
+
+.client-message .message-text {
+    background: #227091;
+    word-break: break-all;
+    max-width: 200px;
+    margin-left: 70%;
+
+}
+
+@media (max-width: 1300px) {
+    .client-message {
+        direction: rtl;
+    }
+}
+
+.message-text p {
+    word-break: break-word;
+    white-space: pre-wrap;
+}
+
+.message-text strong {
+    color: white;
+}
+
+.message-bubble {
+}
+
+@-moz-document url-prefix() {
+    .message-bubble {
+        padding-bottom: 1rem;
+        padding-top: 0 !important;
+    }
+}
+
+.fa-user, .user-table-text, .is-typing-label {
+    padding: 4px;
+    font-size: 1.4em;
+}
+
+.user-table-text {
+    font-weight: bolder;
+}
+
+.is-typing-label {
+    display: none;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+#user-count {
+    font-weight: bolder;
+}
+
+.help {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.newBody {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#user-login {
+    padding: 5px 20px;
+    background-color: black;
+    color: white;
+}
+
+#user-login:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.2s;
+}
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 60px 10px;
+    background-color: grey;
+}
+
+#message-send {
+    padding: 5px 20px;
+    background-color: #192f92;
+    color: white;
+}
+
+.users-container {
+    border: 14px solid #83b1ff;
+    margin-right: 50px;
+    width: 30%;
+    border-radius: 13px;
+    box-shadow: 0 0 15px #162b86;
+    float: right;
+    background-color: rgba(255,255,255, 0.5);
+
+}
+
+.users-container:hover {
+    box-shadow: 3px 3px 5px rgba(35, 71, 221, 0.5);
+    transition: 0.2s;
+
+}

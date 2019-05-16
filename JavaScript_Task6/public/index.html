@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Socket.io Erlis Liiva</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script/scripts.js"></script>
+
+<div class="top-footer">Socket.io Instant Chat</div>
+
+<section id="login-screen" class="hero is-fullheight">
+    <div class="newBody">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column">
+                    <h1 class="title is-size-2">
+                        Vali nimi ja sisene jututuppa!
+                    </h1>
+                </div>
+                <div class="column">
+                    <div class="field has-addons">
+                        <div class="control">
+                            <input id="username" class="input is-medium" type="text" placeholder="Username" autofocus>
+                        </div>
+                        <div class="control">
+                            <br>
+                            <button id="user-login" class="button is-primary is-outlined is-medium">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                    <p id="username-taken" class="help is-danger" style="display: none;">Vali teine kasutajanimi</p>
+                    <p id="username-empty" class="help is-warning" style="display: none;">Siseste kasutajanimi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="chat-screen" class="hero is-fullheight">
+    <div class="column">
+        <div class="users-container is-hidden-mobile">
+            <h2 class="title">Kasutajad: </h2>
+            <div id="user-table">
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="">
+            <div class="columns">
+                <div class="column is-8">
+                    <div class="message-container">
+                    </div>
+                    <div class="input-container">
+                        <div class="columns">
+                            <div class="column is-10">
+                                <textarea id="message" class="textarea" placeholder="Type text here!" rows="5"
+                                          autofocus></textarea>
+                            </div>
+                            <div class="column">
+                                <button id="message-send" class="button is-primary is-outlined is-medium">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
