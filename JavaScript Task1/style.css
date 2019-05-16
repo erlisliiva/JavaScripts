@@ -1,0 +1,57 @@
+table {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+#text {
+    padding: 1px 50px 20px;
+    color: white;
+}
+
+#backG {
+    background-image: url("../JavaScriptTask02/Day-Plan-90-Persp-4x3@1,5x-opt.jpg");
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px 20px 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.38);
+}
+
+td:hover {
+    cursor: pointer;
+    background-size: 100% 100%;
+    transform: scale(1.1, 1.1);
+    transform-origin: center;
+    transition: 0.1s;
+    box-shadow: 10px 10px 14px rgba(10, 10, 10, 0.18);
+}
+
+body {
+    border: 1px solid #4c4c4c;
+    border-top: 10px solid #4c4c4c;
+    margin: 0;
+}
+
+h {
+    margin-left: 45%;
+    color: #fff5b8;
+}
+
+a {
+    text-decoration: none;
+}
+
+table td:nth-child(even) {
+    background-image: linear-gradient(to bottom right, #34ff28, rgb(228, 221, 219))
+}
+
+table td:nth-child(odd) {
+    background-image: linear-gradient(to bottom right, rgb(91, 255, 197), rgba(52, 255, 40, 0.66))
+}

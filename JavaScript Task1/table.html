@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script src="script.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paevaplaan</title>
+    <div style="background-color: #4c4c4c">
+        <h>PÄEVAPLAAN</h>
+    </div>
+</head>
+<body>
+<div id="backG">
+    <div style="margin: 20px; background-color:rgba(0, 0, 0, 0.5);border: 2px solid white">
+
+        <!--adding sth in table-->
+        <table id="dayPlan">
+            <tr id="tableCell"></tr>
+        </table>
+        <br>
+        <!--inputs for item or clock-->
+        <div id="text">
+
+            Lisa:
+            <label for="item"></label><input type="text" name="item" id="item" required/>
+            Kellaaeg:
+            <label for="timeItem"></label><input type="text" name="item" id="timeItem"/>
+            <br>
+            Praegune aeg:
+            <label for="CBox"></label><input type="checkbox" name="checkB" id="CBox">
+
+            <br><br>
+            <!--Buttons-->
+            <input type="button" value="Add Item" onclick="addRow('dayPlan'), maxCount+=1;" id="add"
+                   style="border: 1px solid gray; cursor: pointer; background-color: #9aff97; border-radius: 10px; padding: 5px">
+            <input type="button" value="Delete First" onclick="deleteRow()"
+                   style="border: 1px solid gray; cursor:pointer;background-color: #ff9866; border-radius: 10px; padding: 5px">
+            <input type="button" value="Delete All" onclick="deleteAll()" id="deleteAllItems"
+                   style="border: 1px solid gray; cursor:pointer;background-color: #f75860; border-radius: 10px; padding: 5px">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

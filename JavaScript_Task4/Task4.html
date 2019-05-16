@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<script>
+
+    var counter = 0;
+
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#div1").load("http://127.0.0.1:3000/", function(responseTxt, statusTxt, xhr){
+                    if(statusTxt === "error")
+                        alert("Error: " + xhr.status + ": " + xhr.statusText+
+                        "\nCould not get external content from the server!");
+                    else counter += 1; document.getElementById("counter").innerHTML = counter;
+                });
+            });
+        });
+
+
+    </script>
+<body>
+<h2>Vastus:</h2>
+<div id="div1"></div>
+
+<button>Get External Content</button>
+<div>Päringuid:</div>
+<div id="counter"></div>
+
+</body>
+</html>

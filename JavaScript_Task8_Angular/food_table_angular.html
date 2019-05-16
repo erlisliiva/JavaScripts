@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src="myapp.js"></script>
+<script src="mycntrl.js"></script>
+<style>
+    td {border:1px solid black}
+</style>
+<body>
+<div ng-app="myApp" ng-controller="myCntrl">
+    <table>
+        <thead>
+        <tr>
+            <td ng-click="orderByField('name_est')">Söök</td>
+            <td ng-click="orderByField('providers')">Asukoht</td>
+            <td ng-click="orderByField('price')">Hind</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="r in foods | orderBy:orderedBy" >
+            <td>{{r.name_est}}</td>
+            <td>{{r.providers[0]}}</td>
+            <td>{{r.price + "&euro;"}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+</body>
+</html>

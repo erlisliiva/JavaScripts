@@ -1,0 +1,7 @@
+{
+  "name": "React_task10",
+  "version": "0.0.1",
+  "dependencies": {
+    "react": "^16.8.6"
+  }
+}
